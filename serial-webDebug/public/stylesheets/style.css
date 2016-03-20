@@ -1,0 +1,192 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+td, th, caption {
+    font-size: 14px;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* css common */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #ffffff;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div {
+    color: rgba(40, 50, 60, 0.91);
+}
+
+.left {
+    height: 500px;
+    float: left;
+    width: 100px;
+    background: #ffffff;
+    _margin-right: -3px;
+}
+
+.right {
+    height: 500px;
+    float: right;
+    width: 100px;
+    background: #ffffff;
+    _margin-left: -3px;
+}
+
+.center {
+    overflow: hidden;
+    height: 500px;
+    background: #ffffff;
+    margin: 0 100px;
+}
+
+.center h1 {
+    color: #555555;
+    text-align: center;
+}
+
+.serialMain {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 300px;
+    border: 5px solid #dedede;
+    border-radius: 15px; /* W3C syntax */
+}
+
+#serialSide {
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: #eeeeee;
+    width: 15%;
+    height: 300px;
+    float: left;
+}
+
+#serialCentor {
+    padding: 5px;
+    border-radius: 5px;
+    background: #eeeeee;
+    width: 83%;
+    height: 300px;
+    float: right;
+}
+
+#serialDisplay {
+    border-radius: 5px;
+    resize: none;
+    height: 65%;
+    width: 100%;
+    user-select:none;
+}
+
+#serialInputData {
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    user-select:none;
+}
+
+#sendButton {
+    margin-top: 20px;
+    float: right;
+    border: none;
+    color: #fff;
+    background: #00B7FF;
+    width: 200px;
+    height: 10%;
+
+}
+
+#openSerial{
+    margin-top: 115px;
+    border: none;
+    color: #fff;
+    background: #00B7FF;
+    width: 98%;
+    height: 30px;
+}
+
+#closeSerial{
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    background: #00B7FF;
+    width: 98%;
+    height: 30px;
+}
+
+#sendButton:hover {
+    background: #00aaFF;
+}
+select{
+    height: 30px;
+    margin-top: 5px;
+    width: 80%;
+}
+
+.footer p {
+    text-align: center;
+}

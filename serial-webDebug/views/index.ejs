@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title><%= title %></title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/javascripts/serialop.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<div class="left">
+
+</div>
+<div class="right">
+
+</div>
+
+<div class="center">
+    <h1>[web]串口调试工具</h1>
+    <div class="serialMain">
+        <div id="serialSide">
+            <p>设备</p>
+            <select id = "devicecom">
+                <% serialData.forEach(function(name){ %>
+                <option><%= name.comName %></option>
+                <% }) %>
+                 value="1"><%= title %>
+            </select>
+            <p>波特率</p>
+            <select>
+                <option value="1">115200</option>
+                <option value="2">57600</option>
+                <option value="3">19200</option>
+                <option value="4">9600</option>
+                <option value="5">自定义</option>
+            </select>
+            <li><input id="openSerial" type="button" value="打开串口"></li>
+            <li><input id="closeSerial" type="button" value="关闭串口"></li>
+        </div>
+        <div id="serialCentor">
+            <textarea id="serialDisplay"></textarea>
+
+            <input id="serialInputData" type="text" />
+
+            <input id="sendButton" type="submit" value="send">
+        </div>
+    </div>
+</div>
+
+<div class="footer" >
+    <p>Copy Right by MagicW @2016</p>
+    <p>Powered by nodejs</p>
+</div>
+
+</html>
